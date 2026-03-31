@@ -1,100 +1,82 @@
-# WSWM (Wa Sai Wai Mai) - Full-stack Takeout Management System
+# WSWM (Wa Sai Wai Mai) - 全栈外卖管理系统
 
-WSWM is a complete, end-to-end takeout (food delivery) solution designed for campus or small-scale environments. It features a customer-facing WeChat Mini Program, a merchant-side management dashboard, and a robust Spring Boot backend.
+WSWM 是一个完整端到端的全栈外卖（美食配送）解决方案。本项目包含了面向用户的**微信小程序**、面向商家的**后台管理系统**以及强大的 **Spring Boot 后端服务**。
 
-## 🌟 Key Features
-
-### 📱 Customer Side (WeChat Mini Program)
-- **Menu Browsing:** Explore various categories (Main course, Drinks, Snacks, Set meals).
-- **Ordering System:** Add items to cart, manage quantities, and place orders.
-- **Real-time Status:** View merchant's business status (Open/Closed) synced in real-time.
-- **Reviews & Feedback:** Post comments and rate dishes.
-- **Personal Center:** Manage delivery addresses and view order history.
-
-### 💻 Merchant Side (Web Dashboard)
-- **Business Control:** Toggle "Open/Closed" status with instant sync to all users.
-- **Goods Management:** Full CRUD for dishes and set meals (Mix-goods).
-- **Order Management:** View incoming orders, mark as "Out for Delivery," or cancel orders.
-- **Data Analytics:** Visualized sales statistics and revenue reports using ECharts.
-- **Account System:** Manage merchant credentials and profile photos.
-
-### ⚙️ Backend (RESTful API)
-- **Real-time Sync:** Powered by WebSocket for instant order notifications and status updates.
-- **Security:** JWT-based authentication for both merchants and customers.
-- **Performance:** Redis caching for optimized data retrieval.
-- **Logging:** AOP-based execution timing and logging for system monitoring.
-
----
-
-## 🛠 Tech Stack
-
-### Backend
-- **Framework:** Spring Boot (v3/v4)
-- **ORM:** MyBatis
-- **Database:** MySQL 8.0
-- **Cache:** Redis (Jedis)
-- **Communication:** WebSocket (Real-time notifications)
-- **Security:** JWT (JSON Web Token)
-- **Utilities:** Lombok, Fastjson2, Slf4j (AOP Logging)
-
-### Web Admin Dashboard
-- **Framework:** Vue 3 (Vite)
-- **UI Component:** Element Plus
-- **State Management:** Pinia (with PersistedState)
-- **Routing:** Vue Router
-- **Visualization:** ECharts
-
-### WeChat Mini Program
-- **Platform:** Native WeChat Mini Program
-- **Styling:** Less
-- **Architecture:** Component-based UI
-
----
-
-## 📂 Project Structure
+## 🚀 项目结构
 
 ```text
-.
-├── wswm-project/          # Spring Boot Backend
-│   ├── src/main/java/     # Controller-Service-Mapper Architecture
-│   └── src/main/resources/ # MySQL/Redis/WeChat Configurations
-├── wswmqd/                # Vue.js Admin Dashboard (Frontend)
-│   ├── src/views/         # Pages: Orders, Goods, Wages, Analytics
-│   └── src/websocket/     # Real-time connection logic
-└── miniprogram-1/         # WeChat Mini Program (Frontend)
-    ├── pages/             # Pages: Index, Pay, Order, Profile
-    └── images/            # UI Assets
+project/
+├── java(后端)/          # Spring Boot 后端服务
+├── vue(前端)/           # Vue 3 后台管理系统
+└── wechat(微信小程序端)/ # 微信小程序客户端
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ 技术栈
 
-### Prerequisites
+### 后端 (Backend)
+- **核心框架**: Spring Boot
+- **权限校验**: JWT (JSON Web Token)
+- **数据库**: MySQL 8.0
+- **缓存**: Redis
+- **实时通信**: WebSocket (用于订单实时通知)
+- **其他**: Spring Cache, Spring Scheduling, AOP, Mybatis
+
+### 前端管理端 (Frontend Admin)
+- **框架**: Vue 3
+- **UI 组件库**: Element Plus
+- **状态管理**: Pinia
+- **路由管理**: Vue Router
+- **网络请求**: Axios
+- **实时通信**: WebSocket
+
+### 微信小程序 (Mini Program)
+- **框架**: 原生微信小程序
+- **样式**: Less
+- **功能**: 微信登录、地址管理、在线下单、订单追踪
+
+---
+
+## 📦 快速开始
+
+### 1. 环境准备
 - JDK 17+
-- MySQL 8.0
-- Redis
-- Node.js (for Web Admin)
-- WeChat DevTools (for Mini Program)
+- MySQL 8.0+
+- Redis 6.0+
+- Node.js 16+
+- 微信开发者工具
 
-### Backend Setup
-1. Configure your database and Redis in `wswm-project/src/main/resources/application.yml`.
-2. (Optional) Update WeChat AppID/Secret for mini-program features.
-3. Run `WswmApplication.java`.
+### 2. 后端部署 `java(后端)`
+1. 创建 MySQL 数据库 `project-waimai`。
+2. 修改 `java/resources/application.yml` 中的数据库配置（用户名、密码）。
+3. (可选) 在 `application.yml` 中配置你自己的微信 `appid` 和 `secret`。
+4. 启动 Redis 服务。
+5. 运行 `WswmApplication.java`。
 
-### Web Admin Setup
-1. Navigate to `wswmqd/`.
-2. Install dependencies: `npm install`.
-3. Start development server: `npm run dev`.
+### 3. 后台管理系统 `vue(前端)`
+1. 进入目录：`cd vue(前端)`
+2. 安装依赖：`npm install`
+3. 启动项目：`npm run dev`
+4. 访问地址：通常为 `http://localhost:5173`
 
-### Mini Program Setup
-1. Open `miniprogram-1/` in WeChat DevTools.
-2. Ensure the server URL matches your backend address.
+### 4. 微信小程序 `wechat(微信小程序端)`
+1. 使用微信开发者工具打开 `wechat(微信小程序端)` 文件夹。
+2. 修改 `utils/util.js` 或相关配置中的服务器请求地址（指向你的后端 IP/域名）。
+3. 详情 -> 本地设置 -> 勾选 "不校验合法域名"。
 
 ---
 
-## 📝 License
-This project is for educational purposes.
+## ✨ 核心功能
+
+- **用户侧 (小程序)**: 浏览商品、添加购物车、收货地址管理、下单支付、查看订单状态。
+- **商家侧 (Web)**: 商品管理 (CRUD)、分类管理、订单处理、实时订单提醒、销售统计。
+- **系统特性**: 
+  - 采用 JWT 进行前后端分离的身份验证。
+  - 使用 WebSocket 实现订单从用户下单到商家接单的实时推送。
+  - 集成了 Redis 缓存以提高响应速度。
 
 ---
-*Created with ❤️ by a developer who loves "Wa Sai" food.*
+
+## 📝 备注
+本项目为手写的全栈项目，适合作为学习 Spring Boot + Vue 3 + 小程序全栈开发的参考案例。
