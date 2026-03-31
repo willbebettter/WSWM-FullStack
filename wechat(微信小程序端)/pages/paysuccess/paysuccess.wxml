@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="../../images/5.png" class="success"></image>
+  <view class="pay">支付成功,预计五分钟后送达</view>
+  <view class="bottom"><button class="btn2" type="primary" bindtap="fh">返回首页</button></view>
+</view>

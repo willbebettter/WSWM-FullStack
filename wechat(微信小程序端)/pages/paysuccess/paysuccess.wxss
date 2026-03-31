@@ -1,0 +1,19 @@
+/* pages/paysuccess/paysuccess.wxss */
+page {
+  padding: 0;
+  margin: 0
+}
+
+.container {
+  width: 100%;
+}
+
+.success {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 220rpx 225rpx 50rpx 225rpx;
+}
+.pay{
+  text-align: center;
+  margin-bottom: 50rpx;
+}

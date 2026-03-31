@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="top">
+    <view class="select">
+      <button class="ddzt{{activeid1==='1'?' active1':''}}" bindtap="activebtn" data-id="1">全部</button>
+      <button class="ddzt{{activeid1==='2'?' active1':''}}" bindtap="activebtn" data-id="2">待收货</button>
+      <button class="ddzt{{activeid1==='3'?' active1':''}}" bindtap="activebtn" data-id="3">待评价</button>
+      <button class="ddzt{{activeid1==='4'?' active1':''}}" bindtap="activebtn" data-id="4">退款</button>
+    </view>
+  </view>
+  <view class="main">
+    <view class="dd" wx:for="{{receivelist}}" wx:key="id" wx:for-item="item">
+      <view class="xinxi">
+        <image src="{{item.photo}}" class="cptp"></image>
+        <view class="te1">{{item.name}}</view>
+      </view>
+      <view class="ti">
+        <view class="sj">{{item.time}}
+        </view>
+        <view class="jg"><text class="money">¥ </text>{{item.sum}}</view><button class="pj"
+          hidden="{{item.status===3||item.status===4||item.status===5||!item.status}}" bindtap="tk"
+          data-id="{{item.uuid}}">退款</button>
+        <button class="pj2" hidden="{{item.status===3||item.status===4||item.status===5||!item.status}}" bindtap="cd"
+          data-id="{{item.uuid}}">催单</button>
+        <button class="pj3" hidden="{{item.status!==3}}" bindtap="pj" data-id="{{item.uuid}}">评价</button>
+        <view class="wc" hidden="{{item.status!==0}}">已支付</view>
+        <view class="wc" hidden="{{item.status!==4&&item.status!==3}}">订单已完成</view>
+        <view class="wc" hidden="{{item.status!==5}}">订单已退款</view>
+      </view>
+    </view>
+  </view>
+</view>

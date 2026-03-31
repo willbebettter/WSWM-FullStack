@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="ltnr" id="ym">
+    <view wx:for="{{msglist}}" wx:key="index" wx-for-item="item" class="xx">
+      <view class="phorq">
+        <image src="{{yh}}" class="pho"></image>
+      </view>
+      <view class="text">{{item}}</view>
+    </view>
+  </view>
+  <view class="lt">
+    <input type="text" placeholder=" 请输入内容" value="{{shuru}}" class="sr" bindinput="update"></input>
+    <button class="btn1" bindtap="fs">发送</button>
+  </view>
+  <button class="clear" bindtap="del">清空历史记录</button>
+</view>

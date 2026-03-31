@@ -1,0 +1,111 @@
+page {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAOAAA0AAAAAB4gAAAMrAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCZhEICoQMg0ULEAABNgIkAxwEIAWDGwdPG0wGyB6DbbN5OUlyscQpgyH9yzCUlofv/ft37XvPNxNXcg+3ECr5/ZlUgLp4+rhG5YqoU2be0biafTkd+YCdaCWHpvif/8vxredne9ORndGqbUft5+nHxsQA07wX0BXQmICXQALhhbm2uO33ZIhZXcMakUg8hIAvV+UsAfi+oZknOhioRisK9lAqpGvI82voGJSQned5gaN4l/hrZFSwflFv7xjo94Z8r/jUmFwAAsbdWyCvdy/gLKmHzCeZAFQrl0lC79/Wv+OL/wEDxW+t25iOKb1qbI5CTpQSORAZMtA/EyQowxBFdaAM1KIct/AekACBEHJZjtzdu4v1G40idVet9dnTsDkozHx+lgLq8np9DcKXqC682D7zP6C58kDpQV3U3ketVdGDGsv35G4odO+6U1/yLHkVPfgMhdciB17yCvtsOHWqoTi0FASjAlWZGSEozb7aPRdszp8HTwOvpZvacutWaHjcf8EpT/YvnhSu42tr5VkrnC3ttSf1JXX0/F10tWA2DHde1oyP8QQAoHf+dNyNNk/PmlrTbJV8h8i6VDFOAIIgiyofzzatrfH0bBsz4ZUZYmT+90VG5vvP3EhRRm0dOlSztlbzngNzen21tqWSf8rV53B/1Ssw+mpmDhYBiRoaiQFRz0xNv3iELNG20c6Lxbs92o/qT6lJkLZxMuBxN3aWkrUuVZZ31M41Z3y8pfLUvFGl+vxsQff//x+ijL2numBt6QMmU9nl7Xq4J9cOfXttcgDVnwYggIa9qidBdfr/hEQTQF+m+DQVeJ+iXAYCEPalAghm1a+HsgSImQCQIfE0FYBAmYV4AUDvArXuCRDK1AuQKdNPgFyZMRBIysyBQIkq2yFQqswpASp1eikXqUKoJYMyrB3KsWFQwqaoJVotUUvV2n9mpVEuWStMkgRJkiSCtaeSW5ISAaaJECVDvBCp4HO3VWDokk3eWSKkShMzSjPcEMO4EK6poqg8rT6pOJiOZrUIiYuYQ6SLEA4uk4NmKsEcWoq8fM/cFlo2YUk/irgByNhnyohMFrk8UpSUro7PSY5WEdySGKOM4oix0FHXTjTNAAA=') format('woff2'),
+    url('data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAUYAA0AAAAAB4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE/AAAABoAAAAcrXdTS0dERUYAAATgAAAAHAAAAB4AJwANT1MvMgAAAZAAAAA/AAAAYA8TBjdjbWFwAAAB7AAAAFYAAAFm6bXxUmdhc3AAAATYAAAACAAAAAgAAAAQZ2x5ZgAAAlQAAAFxAAACDOLgCJZoZWFkAAABMAAAACsAAAA2LnZsgWhoZWEAAAFcAAAAHAAAACQIQgRIaG10eAAAAdAAAAAZAAAAHA/VAMBsb2NhAAACRAAAABAAAAAQAJYBJm1heHAAAAF4AAAAGAAAACAACwBfbmFtZQAAA8gAAADcAAABm/pYTdhwb3N0AAAEpAAAADMAAABPfMeGUnjaY2BkAAPFOqNf8fw2Xxm4WcD8pzkiTAj6/wGWBuYDQC4HA1gUAARBCVkAeNpjYGRgYD7w/wADA0sDAwOYZGRABewAYlkDlHjaY2BkYGBgZ4hlYGYAASYGNAAACngAa3jaY2BmXsA4gYGVgYFpJtMZBgaGfgjN+JrBmJGTARUwCqAJMDgwML7MYT7w/wCDAzMQg9QgySowMAIAYLwLVQB42mNhgADGUAjNBMQsDAwHWBoYGAAMdwGlAAAAeNpjYGBgZoBgGQZGBhBIAPIYwXwWBhcgzcPAwcAEZDMyKLz0eJnz/+///2B1SLz/T8T2is0C6+NhQABGkLmMbEDMDBVgAhJMDKgAaBcLw/AGAOV1EdYAAAAAAAAACAAIABAAGAB+AQZ42oVP30vCUBi9d9dtPtQ0uG5NTW2bzknOud2b+QMxC0kzoaAk0J57CnoTQgh6q7+j/2MPPfonJXbdCoSCPrjfPefjnI/zAQh+igOgzoH/OAL+ykcd5IMUqIETAKAmSlAUEljJQEWuOrU2rB1SYtrQLCAt+CgJhp4bSBI4MJiEDRgRdK3AgW6zMVZV1525btBUddxodi3doPFYLE4N3drA733P668f8kPdbD5fHLNazOezcNPy85frG3+E1n540cqPPLNbTDABII9lJSFBlsdc9z+jCyw7DIliM9GaJ5ivFNiE4DKRtiElBbOwuSHSMdLReJTc5rAltwgdyYoijyhphTit8sLSv59MXy0L5S9LZy8erUtSJBrBRWyVy1PHcbwLCA90vSptF4tvd9OmdiTFIVfUeQHjnl2htGL3MA5x6Ty7tYtmuezDYHC9s1MtV55OtU4GcVZS3eN5LpUcEzEmpg3jyrarN8PhY27/C/MUUiUAAAB42nXOsWrCUBjF8X80WrQgnUrpdEenoOADdCp1cOkgHRvjJQT0XogRdO8jdOwz9GF8Ik/CtyZww+87N+cjwIx/Eton4YEn80Cem4fymzmVv8wjHrmYx8p/zVNeuamVpBMls25D64H8Yh7KC3Mqf5hHPPNtHiv/MU9Z8UdFQeSoEwlQFfEYo/CJp+TMgZxaoy/Ph1zo+74v32pPzUn3be5Ykukv2fr6VMXgltmiv/vezY1apbaEblOu2bNXtuOq97rrbqybqRRD40offJ03fu92V7cu4kb7Mu7l2z5DeNpjYGLAD9gZGBiZGJgYmRmYGVkYWdnScyoLMgzZS/MyDQwMwLSrpYkFhDZzBgCY1AkXAAABAAH//wAPeNpjYGRgYOABYjEgZmJgBEI2IGYB8xgAA+AANXjaY2BgYGQAgkfztd1A9NMcESYYDQA6kgTCAAA=') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.my1 {
+  width: 100%;
+  height: 286rpx;
+  background-color: rgba(216, 176, 31, 0.566);
+}
+
+.mypho {
+  width: 100%;
+  height: 200rpx;
+}
+
+.photo {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 25rpx 300rpx;
+  border-radius: 50%;
+}
+
+.myname {
+  width: 100%;
+  text-align: center
+}
+
+.my2 {
+  width: 95%;
+  height: 200rpx;
+  background-color: rgba(0, 0, 0, 0.10);
+  margin: 40rpx 2.5%;
+  border-radius: 25rpx;
+}
+
+.log {
+  color: white;
+  font-weight: 600;
+  background-color: green!important;
+}
+
+.place {
+  width: 250rpx !important;
+  height: 100% !important;
+  float: left;
+  background-color: transparent !important;
+  margin-left: 80rpx !important;
+  font-family: icomoon;
+  margin-top: 50rpx;
+}
+
+.shangjia {
+  width: 250rpx !important;
+  float: right;
+  background-color: transparent !important;
+  margin-right: 80rpx !important;
+  font-family: icomoon;
+  margin-top: 50rpx;
+}
+
+.my3 {
+  width: 100%;
+}
+
+.xgzh {
+  height: 120rpx;
+  margin-top: 50rpx;
+}
+
+.xgtp {
+  height: 120rpx;
+}
+
+.my4 {
+  width: 100%;
+  margin-top: 140rpx;
+}
+
+.tc {
+  color: rgba(255, 0, 0, 0.8);
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.097) !important;
+}
+
+.zh {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.tupian {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}

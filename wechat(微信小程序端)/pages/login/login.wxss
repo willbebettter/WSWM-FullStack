@@ -1,0 +1,16 @@
+/* pages/login/login.wxss */
+page{
+  padding:0;
+  margin:0
+}
+.text{
+  text-align: center;
+  margin-top: 400rpx;
+}
+.btn{
+  margin-top: 50rpx!important;
+}
+.text1{
+  text-align: center;
+  font-size: 25rpx;
+}

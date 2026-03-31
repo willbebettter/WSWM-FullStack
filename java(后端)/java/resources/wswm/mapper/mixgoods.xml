@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wswm.mapper.mixgoods">
+    <insert id="addco1">
+        insert into connect1(mixid, goodid) values
+        <foreach collection="dishNames" item="dishName" separator=",">
+            (#{mixid}, (select id from goods where good_name = #{dishName}))
+        </foreach>
+    </insert>
+</mapper>

@@ -1,0 +1,460 @@
+/**index.wxss**/
+page {
+  margin: 0;
+  padding: 0
+}
+
+button {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row
+}
+
+.top1 {
+  width: 98%;
+  height: 240rpx;
+  background-color: rgb(255, 191, 0);
+  border-radius: 5%;
+  margin-bottom: 20rpx;
+  margin-left: 1%;
+}
+
+.sjms {
+  width: 100%;
+  height: 240rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 1rpx dotted rgba(0, 0, 0, 0.321);
+}
+
+.top2 {
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  margin-bottom: 4rpx;
+  margin-top: 4rpx;
+}
+
+.cbl {
+  width: 20%;
+  background-color: rgba(233, 229, 229, 0.807);
+  margin-top: 30rpx;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  max-height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 100rpx;
+}
+
+.main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 100rpx;
+}
+
+.large1 {
+  width: 70%;
+  height: 100%;
+}
+
+.med1 {
+  width: 100%;
+  height: 50%;
+  color: black;
+  font-weight: 530;
+  font-size: 60rpx;
+  margin-left: 40rpx;
+  line-height: 100rpx;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.sma1 {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+}
+
+.sma2 {
+  box-sizing: border-box;
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  border-left: 2rpx solid rgba(0, 0, 0, 0.3);
+  border-right: 2rpx solid rgba(0, 0, 0, 0.3);
+}
+
+.sma3 {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+
+}
+
+.med2 {
+  width: 100%;
+  height: 50%;
+}
+
+.large2 {
+  width: 20%;
+  height: 100%;
+}
+
+.micro1 {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.836);
+}
+
+.micro2 {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.img1 {
+  width: 80%;
+  height: 55%;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  border-radius: 25rpx;
+}
+
+.mic1 {
+  width: 20% !important;
+  height: 100% !important;
+  margin-left: 30rpx !important;
+  line-height: 80rpx !important;
+  margin-top: 15rpx !important;
+  font-weight: 500 !important;
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.active2 {
+  color: black !important;
+}
+
+.microxx {
+  height: 200rpx !important;
+  width: 100% !important;
+  display: block;
+  color: rgba(0, 0, 0, 0.808);
+  line-height: 200rpx !important;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.active1 {
+  color: black !important;
+  font-weight: 700 !important;
+}
+
+.microxx:first-child {
+  margin-top: 100rpx;
+}
+
+.cnxh {
+  margin: 20rpx 0;
+  color: rgba(0, 0, 0, 0.451);
+  font-size: 20rpx;
+}
+
+.ph {
+  width: 95%;
+  height: 100%;
+  border-radius: 30rpx;
+  margin: 0 2.5%;
+}
+
+.tprq {
+  width: 100%;
+  height: 180rpx;
+  margin-bottom: 30rpx;
+}
+
+.xr {
+  width: 100%;
+  height: 350rpx;
+  display: flex;
+  /* 设置为flex布局 */
+  flex-direction: row;
+  /* 横向排列 */
+  align-items: center;
+  /* 垂直居中 */
+}
+
+.mi1 {
+  width: 50%;
+  height: 100%;
+}
+
+.mi2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pho {
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+  margin: 50rpx 30rpx;
+}
+
+.name {
+  width: 100%;
+  height: 20%;
+  font-size: 40rpx;
+  line-height: 150rpx;
+  font-weight: 500;
+}
+
+.type {
+  width: 100%;
+  height: 15%;
+  line-height: 110rpx;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25rpx;
+}
+
+.sale {
+  width: 100%;
+  height: 15%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25rpx;
+  line-height: 80rpx;
+}
+
+.pricedb {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.price {
+  width: 45%;
+  height: 100%;
+  line-height: 200rpx;
+  font-size: 30rpx;
+}
+
+.btn2 {
+  width: 50%;
+  height: 100%;
+}
+
+.btn3 {
+  width: 40rpx !important;
+  height: 40rpx !important;
+  display: inline-block;
+  background-color: rgba(241, 108, 19, 0.911);
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 35rpx;
+  line-height: 40rpx;
+  font-weight: 350;
+  margin-top: 80rpx !important;
+}
+
+.btn5 {
+  width: 40rpx !important;
+  height: 40rpx !important;
+  display: inline-block;
+  background-color: rgba(241, 108, 19, 0.911);
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 35rpx;
+  line-height: 40rpx;
+  font-weight: 350;
+  margin-top: 80rpx !important;
+  margin-left: 15rpx !important;
+}
+
+.money {
+  font-size: 25rpx;
+}
+
+.pjcount {
+  font-size: 20rpx;
+}
+
+.bigpl {
+  width: 100%;
+  height: 800rpx;
+  margin-top: 20rpx;
+}
+
+.pllist {
+  width: 100%;
+  border-top: 1rpx solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.pltop {
+  width: 100%;
+  height: 120rpx;
+}
+
+.plmain {
+  margin-top: 10rpx;
+  width: 100%;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.plphoto {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin: 20rpx 20rpx;
+  vertical-align: middle;
+}
+
+.plname {
+  display: inline-block;
+  margin-left: 5rpx;
+  font-size: 30rpx;
+}
+
+.fb {
+  width: 100%;
+  height: 50rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right: 0;
+  left: 0
+}
+
+.shuru1 {
+  width: 75%;
+  height: 100%;
+  box-sizing: border-box;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  border: 1px solid rgb(162, 147, 147);
+  margin-left: 40rpx;
+  border-right: none;
+}
+
+.btn4 {
+  position: fixed;
+  bottom: 10rpx;
+  right: 50rpx;
+  width: 100rpx !important;
+  height: 50rpx !important;
+  background-color: rgba(54, 145, 181, 0.755);
+  color: white;
+  font-weight: 400;
+  border-top-right-radius: 40rpx !important;
+  border-bottom-right-radius: 40rpx !important;
+  font-size: 30rpx;
+  line-height: 45rpx;
+}
+
+.qstb {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100rpx;
+}
+
+.zf {
+  width: 200rpx !important;
+  height: 80% !important;
+  display: inline-block !important;
+  line-height: 80rpx !important;
+  margin-top: 10rpx !important;
+  border-radius: 15rpx;
+  background-color: rgba(0, 0, 0, .15) !important;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.sum {
+  width: 370rpx;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30rpx;
+  font-size: 40rpx;
+}
+
+.wmh {
+  height: 100%;
+  width: 100rpx;
+  vertical-align: top;
+  margin-left: 20rpx;
+}
+
+.money2 {
+  font-size: 25rpx;
+}
+
+.active3 {
+  background-color: rgb(232, 99, 33) !important;
+  color: white !important
+}
+
+.sl {
+  width: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 80rpx;
+  text-align: center;
+}
+
+.bo {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.bo2 {
+  width: 100%;
+  height: 100%;
+}
+
+.qstb2 {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100rpx;
+}
+
+.dy {
+  font-size: 50rpx;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 100rpx;
+}

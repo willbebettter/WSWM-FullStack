@@ -1,0 +1,149 @@
+page {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.top {
+  width: 98%;
+  height: 70rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+
+.active1 {
+  color: rgb(224, 142, 0) !important;
+}
+
+.select {
+  width: 100%;
+  height: 100%;
+}
+
+.ddzt {
+  width: 25% !important;
+  height: 100% !important;
+  line-height: 45rpx !important;
+  text-align: center;
+  display: inline-block !important;
+  font-size: 26rpx;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.main {
+  width: 100%;
+}
+
+.dd {
+  width: 100%;
+  height: 240rpx;
+  background-color: white;
+  margin-bottom: 10rpx;
+}
+
+.xinxi {
+  width: 100%;
+  height: 160rpx;
+}
+
+.ti {
+  width: 100%;
+  height: 80rpx
+}
+
+.cptp {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.money {
+  font-size: 25rpx;
+}
+
+.te1 {
+  width: 590rpx;
+  display: inline-block;
+  height: 100%;
+  padding-top: 10rpx;
+}
+
+.sj {
+  width: 35%;
+  height: 100%;
+  display: inline-block;
+  line-height: 60rpx;
+  vertical-align: top;
+  font-size: 25rpx;
+  padding-left: 20rpx;
+}
+
+.jg {
+  width: 21%;
+  display: inline-block;
+  height: 100%;
+  text-align: right;
+  line-height: 60rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+
+.pj {
+  width: 20% !important;
+  height: 70rpx !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  line-height: 70rpx;
+  background-color: rgba(255, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 30rpx;
+  vertical-align: top;
+  color: rgba(255, 0, 0, 0.9);
+}
+
+.pj2 {
+  width: 20% !important;
+  height: 70rpx !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  line-height: 70rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 30rpx;
+  vertical-align: top;
+  margin-left: 10rpx !important;
+}
+
+.pj3 {
+  width: 20% !important;
+  height: 70rpx !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  line-height: 70rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 30rpx;
+  vertical-align: top;
+  float: right;
+}
+
+.wc {
+  width: 20%;
+  height: 70rpx;
+  display: inline-block;
+  line-height: 70rpx;
+  font-weight: 700;
+  font-size: 30rpx;
+  vertical-align: top;
+  float: right;
+  margin-right: 10rpx;
+}

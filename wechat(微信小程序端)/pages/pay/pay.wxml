@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="top">
+    <navigator url="/pages/address/address" class="address">收货地址: {{shdz}}</navigator>
+  </view>
+  <view class="main">
+    <view class="dpname">哇了个塞·肘鸡</view>
+    <view class="cp" wx:for="{{paylist}}" wx:key="id" wx-for-item="item">
+      <image src="{{item.photo}}" class="pho"></image>
+      <view class="xinxi1">
+        <view class="cpm">
+          <view class="name">{{item.name1}}</view>
+          <view class="price"><text class="money">¥ </text>{{item.price}}</view>
+        </view>
+        <view class="shuliang">x{{item.count}}</view>
+      </view>
+    </view>
+    <view class="ty1">
+      <view class="tyname1">打包费</view>
+      <view class="typrice1"><text class="money">¥ </text>2</view>
+    </view>
+    <view class="ty1">
+      <view class="tyname1">配送费</view>
+      <view class="typrice1"><text class="money">¥ </text>3</view>
+    </view>
+  </view>
+  <view class="main2">
+    <view class="bo1">
+      <view class="bz">备注</view>
+      <button class="bznr" bindtap="bz">{{bz}}</button>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="tj">
+      <text class="hj">合计</text><text class="money">¥ </text>{{zj}}
+    </view>
+    <view class="anqy"><button class="btn1" bindtap="btn1">提交订单</button></view>
+  </view>
+
+
+
+
+
+
+
+
+
+</view>

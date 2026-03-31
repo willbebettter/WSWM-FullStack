@@ -1,0 +1,14 @@
+<view class="container">
+  <input type="text" placeholder="请输入你的要添加的收货地址" class="adddz" value="{{shuru}}" bindinput="sr"></input>
+  <button class="btn1" bind:tap="add">新增</button>
+  <view class="shdz">
+    <radio-group bindchange="dxk">
+      <view class="dzx" wx:for="{{addlist}}" wx:key="index" wx-for-item="item">
+        <radio value="{{index}}" class="xx">
+        </radio>
+        <view class="wz">{{item}}</view>
+        <button class="sc" bindtap="del" data-id="{{index}}">删除</button>
+      </view>
+    </radio-group>
+  </view>
+</view>

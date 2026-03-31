@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="my1">
+    <view class="mypho">
+      <image src="{{yhlist[0].photo}}" class="photo"></image>
+    </view>
+    <view class="myname">{{yhlist[0].name}}</view>
+  </view>
+  <view class="my2">
+    <button class="place" bindtap="myaddress">
+      <view class="ico"></view>
+      <view class="address">我的地址</view>
+    </button>
+    <button class="shangjia" bindtap="connect">
+      <view class="ico"></view>
+      <view class="address">联系商家</view>
+    </button>
+  </view>
+  <view class="my3">
+    <view class="xgzh"><button class="zh" bindtap="xgname">修改账号名称</button></view>
+    <view class="xgtp"><button class="tupian" bindtap="xgpho">修改用户图片</button></view>
+  </view>
+  <view class="my4"><button class="tc" bindtap="tuichu" wx:if="{{zt}}">退出登录</button>
+    <button class="log" bindtap="log" wx:if="{{!zt}}">立即登录</button>
+  </view>
+</view>

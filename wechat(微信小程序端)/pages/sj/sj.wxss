@@ -1,0 +1,79 @@
+/* pages/sj/sj.wxss */
+page {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+}
+
+.ltnr {
+  width: 100%;
+  height: 1070rpx;
+  overflow: auto;
+}
+
+.lt {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 30rpx;
+}
+
+.sr {
+  border: 1px solid black;
+  width: 480rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+}
+
+.btn1 {
+  width: 200rpx !important;
+  height: 55rpx !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-block;
+  background-color: rgb(231, 116, 0);
+  color: white;
+  margin-left: 40rpx !important;
+}
+
+.xx {
+  width: 100%;
+}
+
+.phorq {
+  width: 80rpx;
+  display: inline-block;
+}
+
+.pho {
+  width: 100%;
+  height: 80rpx;
+  border-radius: 20rpx;
+  vertical-align: middle;
+}
+
+.text {
+  display: inline-block;
+  margin-left: 20rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  padding: 15rpx;
+  margin-top: 20rpx;
+}
+
+.clear {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 220rpx !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.clear:hover {
+  color: rgba(255, 0, 0, 0.6);
+}

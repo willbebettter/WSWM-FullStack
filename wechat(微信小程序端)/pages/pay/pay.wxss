@@ -1,0 +1,191 @@
+page {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 200rpx;
+}
+
+.top {
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  margin-bottom: 20rpx;
+}
+
+.address {
+  margin-left: 2%;
+  width: 98%;
+  height: 100%;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20rpx;
+}
+
+.dpname {
+  width: 100%;
+  font-size: 27rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.cp {
+  width: 100%;
+  height: 150rpx;
+}
+
+.money {
+  font-size: 25rpx;
+}
+
+.pho {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 10rpx 20rpx;
+  border-radius: 20rpx;
+  vertical-align: top;
+}
+
+.cpm {
+  width: 100%;
+  height: 60%;
+}
+
+.shuliang {
+  width: 100%;
+  height: 40%;
+  line-height: 65rpx;
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.xinxi1 {
+  width: 75%;
+  height: 100%;
+  float: right;
+}
+
+.name {
+  width: 65%;
+  height: 100%;
+  display: inline-block;
+  line-height: 60rpx;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.price {
+  width: 35%;
+  height: 100%;
+  display: inline-block;
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.ty1 {
+  width: 100%;
+  height: 60rpx;
+
+}
+
+.tyname1 {
+  width: 50%;
+  font-size: 30rpx;
+  display: inline-block;
+  padding-left: 20rpx;
+}
+
+.typrice1 {
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+  font-size: 40rpx;
+}
+
+.main2 {
+  width: 100%;
+  background-color: white;
+}
+
+.bo1 {
+  width: 100%;
+  height: 60rpx;
+}
+
+.bz {
+  width: 10%;
+  float: left;
+  height: 100%;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.bznr {
+  width: 85% !important;
+  float: left !important;
+  height: 100% !important;
+  text-align: right !important;
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0 !important;
+  line-height: 60rpx;
+  margin: 0 !important
+}
+
+.fk {
+  width: 100%;
+  background-color: white;
+  margin-top: 20rpx;
+}
+
+.bottom {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+}
+
+.tj {
+  width: 57%;
+  height: 100%;
+  float: left;
+  text-align: right;
+  margin-right: 20rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+}
+
+.hj {
+  font-size: 25rpx;
+  margin-right: 10rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.anqy {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.btn1 {
+  width: 90% !important;
+  height: 90% !important;
+  padding: 0 !important;
+  margin: 2% !important;
+  background-color: rgb(238, 122, 20);
+  color: white;
+  font-weight: 550 !important;
+  line-height: 90rpx !important;
+  border-radius: 10rpx;
+}

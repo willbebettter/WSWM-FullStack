@@ -1,0 +1,91 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="../../images/1.png" class="top1"></image>
+  <view class="sjms">
+    <view class="large1">
+      <view class="med1">哇了个塞·肘鸡</view>
+      <view class="med2">
+        <view class="sma1">
+          <view class="micro1">评分</view>
+          <view class="micro2">4.9</view>
+        </view>
+        <view class="sma2">
+          <view class="micro1">月售</view>
+          <view class="micro2">1亿+</view>
+        </view>
+        <view class="sma3">
+          <view class="micro1">校园送</view>
+          <view class="micro2">约4年</view>
+        </view>
+      </view>
+    </view>
+    <view class="large2">
+      <image src="../../images/2.png" class="img1"></image>
+    </view>
+    <view></view>
+  </view>
+  <view class="top2">
+    <button class="mic1{{activeid2==='1'?' active2' :''}}" bindtap="topdj" data-id="1">点餐</button>
+    <button class="mic1{{activeid2==='2'?' active2' :''}}" bindtap="topdj" data-id="2">评价 <text class="pjcount">
+        666</text></button>
+  </view>
+  <view hidden="{{!dc}}" class="bigpl">
+    <view class="pllist" wx:for="{{pllist}}" wx:key="id" wx-for-item="item">
+      <view class="pltop">
+        <image src="{{item.photo}}" class="plphoto"></image><text class="plname">{{item.name}}</text>
+      </view>
+      <view class="plmain">{{item.content}}</view>
+    </view>
+    <view class="fb"><input type="text" class="shuru1" placeholder=" 请文明发言,不然请你吃肘鸡" bindinput="shuru"
+        value="{{shuru}}"></input><button class="btn4" bindtap="fsmsg">发送</button></view>
+  </view>
+  <view class="cbl" hidden="{{dc}}">
+    <button class="microxx{{activeid==='11'?' active1':''}}" bindtap="cbdj" data-id="11">全部</button>
+    <button class="microxx{{activeid==='1'?' active1':''}}" bindtap="cbdj" data-id="1">全部菜品</button>
+    <button class="microxx{{activeid==='2'?' active1':''}}" bindtap="cbdj" data-id="2">主食</button>
+    <button class="microxx{{activeid==='3'?' active1':''}}" bindtap="cbdj" data-id="3">饮品</button>
+    <button class="microxx{{activeid==='4'?' active1':''}}" bindtap="cbdj" data-id="4">炸货小吃</button>
+    <button class="microxx{{activeid==='5'?' active1':''}}" bindtap="cbdj" data-id="5">菜品</button>
+    <button class="microxx{{activeid==='6'?' active1':''}}" bindtap="cbdj" data-id="6">全部套餐</button>
+    <button class="microxx{{activeid==='7'?' active1':''}}" bindtap="cbdj" data-id="7">拼好饭</button>
+    <button class="microxx{{activeid==='8'?' active1':''}}" bindtap="cbdj" data-id="8">热销组合</button>
+    <button class="microxx{{activeid==='9'?' active1':''}}" bindtap="cbdj" data-id="9">超值套餐</button>
+    <button class="microxx{{activeid==='10'?' active1':''}}" bindtap="cbdj" data-id="10">疯狂星期四</button>
+  </view>
+  <view class="main" hidden="{{dc}}">
+    <view class="cnxh">------------------------温馨提示:请适量点餐------------------------</view>
+    <view class="tprq">
+      <image src="../../images/3.png" class="ph"></image>
+    </view>
+    <view wx:for="{{currentlist}}" wx:key="id" wx:for-item="item" class="xr">
+      <view class="mi1">
+        <image src="{{item.photo}}" class="pho"></image>
+      </view>
+      <view class="mi2">
+        <view class="name">{{item.name1}}</view>
+        <view class="type">原料: {{item.text}}</view>
+        <view class="sale">月售: {{item.sale}}+</view>
+        <view class="pricedb">
+          <view class="price"><text class="money">¥ </text>{{item.price}}</view>
+          <view><button data-id="{{item.id}}" class="btn5" bindtap="gwsub">-</button>
+            <view class="sl">{{item.count}}</view><button data-id="{{item.id}}" class="btn3" bindtap="gwadd">+</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view hidden="{{dc}}" class="qstb">
+  <view hidden="{{!sjstatus}}" class="bo">
+    <image src="../../images/4.jpg" class="wmh"></image>
+    <view class="sum">
+      <text class="money2">¥ </text>{{countprice}}
+    </view>
+    <button class="zf {{countprice > 0?' active3':''}}" disabled="{{countprice<=0}}" bindtap="qzf">去结算</button>
+  </view>
+</view>
+<view hidden="{{sjstatus}}" class="qstb2">
+  <view hidden="{{sjstatus}}" class="bo2">
+    <view class="dy">本店已打烊</view>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+/* pages/address/address.wxss */
+page {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+}
+
+.adddz {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 500rpx;
+  height: 40rpx;
+  display: inline-block;
+  margin-left: 50rpx;
+  margin-right: 30rpx;
+}
+
+.btn1 {
+  width: 150rpx !important;
+  height: 20prx !important;
+  margin: 0 !important;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 !important;
+  font-weight: 400;
+}
+
+.shdz {
+  margin-top: 50rpx;
+  width: 100%
+}
+
+.dzx {
+  width: 100%;
+  height: 100rpx;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.xx {
+  width: 100rpx;
+  height: 100%;
+  line-height: 100rpx;
+  margin-left: 40rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wz {
+  width: 65%;
+  display: inline-block;
+  height: 100%;
+  line-height: 100rpx;
+}
+.sc{
+padding: 0!important;
+margin: 0!important;
+width: 100rpx!important;
+display: inline-block!important;
+height:100%!important;
+vertical-align: top;
+line-height: 100rpx;
+font-weight: 400;
+color: black;
+font-size: 25rpx;
+margin-left: 10rpx!important;
+}
